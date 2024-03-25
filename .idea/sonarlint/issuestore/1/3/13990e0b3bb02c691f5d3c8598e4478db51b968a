@@ -1,0 +1,29 @@
+
+•	java:S116	"SRename this field "MAX_AGUA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£İà´8¬¢¬ç1J$6b19b4e1-e418-4978-a8c0-dec826d636c0
+š	java:S116
+"SRename this field "MAX_CAFE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·»ÙÛøÿÿÿÿ8¬¢¬ç1J$a9c9a8d2-ef2b-4195-8be9-8b4dbbeda2e3
+d
+java:S1170	"!Make this final field static too.(£İà´8¬¢¬ç1J$69dce50f-102e-4d14-900d-1d80332d0475
+i
+java:S1170
+"!Make this final field static too.(·»ÙÛøÿÿÿÿ8¬¢¬ç1J$2033a3e0-3c8a-4eb7-b994-5d64cea8ef08
+m	java:S106+"+Replace this use of System.out by a logger.(Â†·œ8„¬¢¬ç1J$bda193c3-dbc2-45c5-944b-00285c9598d2
+m	java:S106-"+Replace this use of System.out by a logger.(ùØØÅ8„¬¢¬ç1J$eb9c2583-2072-4662-b386-856d836a863e
+m	java:S1064"+Replace this use of System.out by a logger.(¾ÿ¹™8…¬¢¬ç1J$499c7b4c-b220-4fb9-9dec-f5f2c40cbec8
+r	java:S1066"+Replace this use of System.out by a logger.(õ«±Úşÿÿÿÿ8…¬¢¬ç1J$85d7fcc7-7787-4339-bd3b-4726f96616f6
+m	java:S106="+Replace this use of System.out by a logger.(ËÕÇ“8…¬¢¬ç1J$a4ea4d97-72ce-4d31-a32c-3aecd3ec562d
+r	java:S106?"+Replace this use of System.out by a logger.(Ææƒ¿ıÿÿÿÿ8…¬¢¬ç1J$a88deffd-e097-4e38-ac51-9ca599aa018d
+r	java:S106B"+Replace this use of System.out by a logger.(¤Úìüÿÿÿÿ8…¬¢¬ç1J$f68f25fa-d2aa-496b-aef1-f397ab4d1a30
+m	java:S106J"+Replace this use of System.out by a logger.(ë™²š8…¬¢¬ç1J$0cf3e325-c3ee-4841-8573-21ae3cd7573d
+r	java:S106L"+Replace this use of System.out by a logger.(â–Öğüÿÿÿÿ8…¬¢¬ç1J$f8775fae-5d4f-4e59-9b90-4fedb7aef0d1
+m	java:S106O"+Replace this use of System.out by a logger.(Çİé“8…¬¢¬ç1J$561ade04-2b3a-4029-8f1b-022c0d66619b
+m	java:S106U"+Replace this use of System.out by a logger.(æ·•­8‡¬¢¬ç1J$ebb00fe4-bfdf-456b-be69-d1fe4d067b96
+r	java:S106X"+Replace this use of System.out by a logger.(’„öæüÿÿÿÿ8‡¬¢¬ç1J$3bcbcef6-84bf-4146-a8a4-435dbfc3658d
+l	java:S106\"+Replace this use of System.out by a logger.(Ì£ÛG8‡¬¢¬ç1J$95cfffef-7c8a-433e-b29a-25a5bcb7cd4b
+m	java:S106a"+Replace this use of System.out by a logger.(…ë¬Ş8ˆ¬¢¬ç1J$56f12957-af5a-433c-959f-33d95c38ccaf
+r	java:S106b"+Replace this use of System.out by a logger.(›áÃªÿÿÿÿÿ8ˆ¬¢¬ç1J$7cab047b-6feb-41d7-bc0e-044b97ecd53f
+l	java:S106c"+Replace this use of System.out by a logger.(Àğ<8ˆ¬¢¬ç1J$ddaa46d3-7c0d-4304-a1fb-df5d9d87179d
+l
+java:S1068")Remove this unused "marca" private field.(š’Ôæ8‰¬¢¬ç1J$461f03f4-c69a-4823-a25d-588a1e39931b
+m
+java:S1068"*Remove this unused "modelo" private field.(ˆÙÌå8‰¬¢¬ç1J$a9819c06-cfda-482f-a764-2d77b19f4a52
