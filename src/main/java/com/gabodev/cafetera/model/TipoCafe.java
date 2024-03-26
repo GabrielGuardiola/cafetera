@@ -1,5 +1,7 @@
 package com.gabodev.cafetera.model;
 
+import com.gabodev.cafetera.model.CafeteraBase;
+
 public interface TipoCafe {
-    void realizarCafe(Cafetera cafetera);
+    String getTipo();
 }

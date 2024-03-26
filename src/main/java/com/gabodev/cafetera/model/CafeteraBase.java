@@ -1,18 +1,18 @@
 package com.gabodev.cafetera.model;
 
-public class Cafetera {
+public abstract class CafeteraBase {
 
-    private TipoCafe tipoCafe;
-    private String marca;
-    private String modelo;
-    private boolean isOn;
-    private final int MAX_AGUA = 100;
-    private final int MAX_CAFE = 100;
+    protected TipoCafe tipoCafe;
+    protected String marca;
+    protected String modelo;
+    protected boolean isOn;
+    protected final int MAX_AGUA = 100;
+    protected final int MAX_CAFE = 100;
 
-    private int agua;
-    private int cafe;
+    protected int agua;
+    protected int cafe;
 
-    public Cafetera(String marca, String modelo) {
+    public CafeteraBase(String marca, String modelo, boolean isOn, int agua, int cafe) {
         this.marca = marca;
         this.modelo = modelo;
         this.isOn = false;
@@ -23,10 +23,6 @@ public class Cafetera {
 
     public void setTipoCafe(TipoCafe tipoCafe) {
         this.tipoCafe = tipoCafe;
-    }
-
-    public void realizarCafe() {
-        tipoCafe.realizarCafe(this);
     }
 
     public int getAgua() {
@@ -80,26 +76,7 @@ public class Cafetera {
         }
     }
 
-    public void hacerCafe() {
-        if(!isOn) {
-            System.out.println("La cafetera está apagada");
-        } else{
-            if(cafe < 10) {
-                System.out.println("No hay suficiente café");
-                return;
-            }
-            if(agua < 50) {
-                System.out.println("No hay suficiente agua");
-                return;
-            }
-            cafe = cafe - 10;
-            agua = agua - 50;
-            System.out.println("Café hecho");
-            System.out.println("Café restante: " + cafe + "g");
-            System.out.println("Agua restante: " + agua + "ml");
-        }
-    }
-
+    public abstract Cafe hacerCafe(TipoCafe tipoCafe);
     public boolean isOn() {
         return isOn;
     }
