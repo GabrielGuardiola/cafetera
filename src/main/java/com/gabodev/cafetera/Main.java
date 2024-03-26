@@ -16,10 +16,10 @@ public class Main {
         CafeteraBase cafetera;
 
         if (tipoCafetera == 1) {
-            cafetera = new CafeteraConFiltro("Cafetera con filtro", "Modelo con filtro");
+            cafetera = new CafeteraConFiltro("Cafetera con filtro", "Modelo con filtro", new MolinilloCircular());
             cafetera.setTipoCafe(new TipoCafeNormal(true));
         } else if (tipoCafetera == 2) {
-            cafetera = new CafeteraSinFiltro("Cafetera sin filtro", "Modelo sin filtro");
+            cafetera = new CafeteraSinFiltro("Cafetera sin filtro", "Modelo sin filtro", new MolinilloConico());
             cafetera.setTipoCafe(new TipoCafeExpresso(false));
 
         } else {
