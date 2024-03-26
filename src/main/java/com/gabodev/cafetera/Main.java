@@ -17,8 +17,11 @@ public class Main {
 
         if (tipoCafetera == 1) {
             cafetera = new CafeteraConFiltro("Cafetera con filtro", "Modelo con filtro");
+            cafetera.setTipoCafe(new TipoCafeNormal(true));
         } else if (tipoCafetera == 2) {
             cafetera = new CafeteraSinFiltro("Cafetera sin filtro", "Modelo sin filtro");
+            cafetera.setTipoCafe(new TipoCafeExpresso(false));
+
         } else {
             System.out.println("Tipo de cafetera inválido");
             return;
@@ -33,11 +36,10 @@ public class Main {
             System.out.println("2. Apagar cafetera");
             System.out.println("3. Rellenar agua");
             System.out.println("4. Rellenar café");
-            System.out.println("5. Hacer café");
-            System.out.println("6. Preparar café ristretto");
-            System.out.println("7. Preparar café espresso");
-            System.out.println("8. Preparar café normal");
-            System.out.println("9. Salir");
+            System.out.println("5. Preparar café ristretto");
+            System.out.println("6. Preparar café espresso");
+            System.out.println("7. Preparar café normal");
+            System.out.println("8. Salir");
             System.out.println("------------------------------");
 
             int opcion = scanner.nextInt();
@@ -60,26 +62,24 @@ public class Main {
                     cafetera.rellenarCafe(cantidadCafe);
                     break;
                 case 5:
-                    Cafe cafe = cafetera.hacerCafe(new TipoCafeNormal());
-                    System.out.println("Se ha preparado un café: " + cafe.getCafePreparado());
-                    System.out.println("Filtrado: " + cafe.getIsFiltrado());
+                    cafetera.setTipoCafe(new TipoCafeRistretto(tipoCafetera == 1));
+                    TipoCafe cafeRistretto = cafetera.hacerCafe();
+                    System.out.println("Se ha preparado un café: " + cafeRistretto.getTipo());
+                    System.out.println("Filtrado: " + cafeRistretto.getIsFiltered());
                     break;
                 case 6:
-                    Cafe cafeRistretto = cafetera.hacerCafe(new TipoCafeRistretto());
-                    System.out.println("Se ha preparado un café: " + cafeRistretto.getCafePreparado());
-                    System.out.println("Filtrado: " + cafeRistretto.getIsFiltrado());
+                    cafetera.setTipoCafe(new TipoCafeExpresso(tipoCafetera == 1));
+                    TipoCafe cafeExpresso = cafetera.hacerCafe();
+                    System.out.println("Se ha preparado un café: " + cafeExpresso.getTipo());
+                    System.out.println("Filtrado: " + cafeExpresso.getIsFiltered());
                     break;
                 case 7:
-                    Cafe cafeExpresso = cafetera.hacerCafe(new TipoCafeExpresso());
-                    System.out.println("Se ha preparado un café: " + cafeExpresso.getCafePreparado());
-                    System.out.println("Filtrado: " + cafeExpresso.getIsFiltrado());
+                    cafetera.setTipoCafe(new TipoCafeNormal(tipoCafetera == 1));
+                    TipoCafe cafeNormal = cafetera.hacerCafe();
+                    System.out.println("Se ha preparado un café: " + cafeNormal.getTipo());
+                    System.out.println("Filtrado: " + cafeNormal.getIsFiltered());
                     break;
                 case 8:
-                    Cafe cafeNormal = cafetera.hacerCafe(new TipoCafeNormal());
-                    System.out.println("Se ha preparado un café: " + cafeNormal.getCafePreparado());
-                    System.out.println("Filtrado: " + cafeNormal.getIsFiltrado());
-                    break;
-                case 9:
                     isRunning = false;
                     break;
                 default:

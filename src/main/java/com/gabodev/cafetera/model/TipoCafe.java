@@ -4,4 +4,5 @@ import com.gabodev.cafetera.model.CafeteraBase;
 
 public interface TipoCafe {
     String getTipo();
+    Boolean getIsFiltered();
 }

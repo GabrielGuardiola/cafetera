@@ -6,8 +6,7 @@ public class CafeteraSinFiltro extends CafeteraBase{
         super(marca, modelo,false,100,100);
     }
     @Override
-    public Cafe hacerCafe(TipoCafe tipoCafe) {
-        Cafe newCafe = new Cafe(tipoCafe.getTipo(), false);
-        return newCafe;
+    public TipoCafe hacerCafe() {
+        return this.tipoCafe;
     }
 }

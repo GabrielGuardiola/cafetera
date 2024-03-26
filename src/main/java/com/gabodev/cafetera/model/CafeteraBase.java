@@ -76,7 +76,7 @@ public abstract class CafeteraBase {
         }
     }
 
-    public abstract Cafe hacerCafe(TipoCafe tipoCafe);
+    public abstract TipoCafe hacerCafe();
     public boolean isOn() {
         return isOn;
     }
